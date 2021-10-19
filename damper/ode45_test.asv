@@ -1,0 +1,25 @@
+clc 
+clear
+
+m = 1;
+k = 1;
+% c1 = logspace(0,5,10);
+c1 = 0.1;
+c3 = 0.1;
+tspan = [0 5];
+x0 = [10 0];
+
+for i = 1:length(c1)
+    sol = ode15s(@(t,x) nonlinear_damper(t,x,k,c1(i),c3,m),tspan,x0);
+    plot(i).x = sol.x;
+    plot(i).y = sol.y;
+end
+%}
+% sol = ode15s(@(t,x) nonlinear_damper(t,x,k,c1,c3,m),tspan,x0);
+
+
+plot(sol.x,sol.y(1,:),'-o')
+hold on
+plot(sol.x,sol.y(2,:),'-*')
+hold off
+legend ('pos','vel')
