@@ -1,0 +1,9 @@
+Imidiate Goals: 
+Digitize and curve fit the remaining curves for Hi/Lo compression and rebound damping
+Implement the dampening curve in lookup tables 
+Develop a function to switch between compression and rebound dampening
+Develop a function that switches between spring/stroke settings on the fly (if possible)
+Validate spring, mass, damper and input forces are summing correctly and there are no issues
+Clean the damperLUT script file 
+Parametrize the model completely, that runs off of the preloaded script
+Implement a spring subsystem for the bump stop to combat compression vibration when at the end of stroke
