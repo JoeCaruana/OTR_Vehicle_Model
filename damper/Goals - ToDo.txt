@@ -1,5 +1,5 @@
 Imidiate Goals: 
-Digitize and curve fit the remaining curves for Hi/Lo compression and rebound damping
+Digitize and curve fit the remaining curves for Hi/Lo compression and rebound damping...DONE
 Implement the dampening curve in lookup tables 
 Develop a function to switch between compression and rebound dampening
 Develop a function that switches between spring/stroke settings on the fly (if possible)
