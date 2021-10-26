@@ -1,7 +1,35 @@
 clear
 clc 
-load('damper_R12_lo.csv')
+%%
+% Load damper tables
+cd 'C:\Users\Tarek\Documents\GitHub\OTR_Vehicle_Model\damper\plot images\plotdata'
+load('c12_high_0.mat');
+load('c12_high_1.mat');
+load('c12_high_2.mat');
+load('c12_high_3.mat');
+load('c12_high_4.mat');
+load('c12_low_0.mat');
+load('c12_low_2.mat');
+load('c12_low_4.mat');
+load('c12_low_6.mat');
+load('c12_low_10.mat');
+load('c12_low_15.mat');
+load('c12_low_25.mat');
+load('r12_high_0.mat');
+load('r12_high_1.mat');
+load('r12_high_2.mat');
+load('r12_high_3.mat');
+load('r12_high_4.mat');
+load('r12_low_0.mat');
+load('r12_low_2.mat');
+load('r12_low_4.mat');
+load('r12_low_6.mat');
+load('r12_low_10.mat')
+load('r12_low_15.mat');
+load('r12_low_25.mat');
 
+cd 'C:\Users\Tarek\Documents\GitHub\OTR_Vehicle_Model\damper\'
+%%
 Fd = damper_R12_lo(:,1)';
 vel = damper_R12_lo(:,2)';
 
